@@ -13,7 +13,7 @@
     x.parentNode.insertBefore(o, x);
 })(document, 'script'); //
 
-export class merchant  {
+export default class merchant  {
 
     #data = {
         token: 'GuyueDCjFrQnGmANMyIv6QV7U2G1s0gh',

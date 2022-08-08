@@ -8,42 +8,31 @@
 
 
 
-
-
 <body>
 	<h3>Тест виджета</h3>
 	
 	<p> Данные тестовой карты: </p>
 	<p> 4111 1111 1111 1111 12 24 123 TEST </p>
 
-	<button onclick="pay">Оплатить! (positive-check)</button>
+	<button id="pay">Оплатить! (positive-check)</button>
 	
-	
-	
+<script type="module">
+    import merchant from './PayBoxWidget.js'
+    const merch = new merchant();
 
+    // document.addEventListener('Click', ()=>{}), options)
+    let buton = document.querySelector('#pay')
+    
+    buton.addEventListener('click', ()=>{pay(5)})
 
-<script src="./PayBoxWidget.js"></script>
+    const pay = (amount) =>{
+        // console.log("dsdd")    
+        merch.initPayment(  amount,{ })
+        
+    }
 
-<script>
-
-// import {merchant} from './PayBoxWidget';
-
-// const merch = new merchant();
-
-    console.log("dsdd")
-    // const pay = () =>{
-    // merch.initPayment(
-    //             amount,
-    //             { }
-    // )
-
-console.log("pay")
-
-// }
 
 </script>
-
-
 
 </body>
 </html>
