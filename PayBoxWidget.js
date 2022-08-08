@@ -11,7 +11,7 @@
     o.async = 1;
     o.src = 'https://widget.paybox.money/v1/paybox/pbwidget.js?' + 1 * new Date();
     x.parentNode.insertBefore(o, x);
-})(document, 'script');
+})(document, 'script'); //
 
 export class merchant  {
 
